@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".problem_content">
+
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="PROBLEM"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:translationY="100dp"
+        app:srcCompat="@drawable/doge" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:translationY="300dp" />
+
+
+
+</RelativeLayout>

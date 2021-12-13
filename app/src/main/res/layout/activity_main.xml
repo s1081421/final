@@ -1,0 +1,65 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/np_complete_title"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="NP-Complete problem"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/np_hard_title"
+        android:layout_width="1000dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="NP_Hard problem"
+        android:textSize="40dp"
+        android:translationY="400dp" />
+
+    <RelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:translationY="100dp"
+        tools:context=".MyActivity">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="1000dp"
+        android:layout_height="250dp"
+        android:translationY="480dp"
+        tools:context=".MyActivity">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
