@@ -11,42 +11,40 @@
         android:layout_width="1000dp"
         android:layout_height="100dp"
         android:gravity="center"
-        android:text="NP-Complete problem"
-        android:textSize="40dp" />
+        android:text="@string/NP_title"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/np_hard_title"
         android:layout_width="1000dp"
         android:layout_height="80dp"
         android:gravity="center"
-        android:text="NP_Hard problem"
-        android:textSize="40dp"
-        android:translationY="400dp" />
+        android:text="@string/NP_title2"
+        android:textSize="40sp"
+        android:translationY="300dp" />
 
     <RelativeLayout
         android:layout_width="1000dp"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:translationY="100dp"
         tools:context=".MyActivity">
 
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </ListView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/np_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="1000dp"
-        android:layout_height="250dp"
-        android:translationY="480dp"
+        android:layout_height="200dp"
+        android:translationY="380dp"
         tools:context=".MyActivity">
 
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-        </ListView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/np_hard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
 

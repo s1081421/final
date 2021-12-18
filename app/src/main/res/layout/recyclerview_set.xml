@@ -1,0 +1,44 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#ECEBEB"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/NP_complete_recyler_title_view"
+        android:text="@string/NP_title"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="?attr/colorBackgroundFloating" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:background="@color/cardview_dark_background"
+            android:id="@+id/np_complete_list_view1"
+            android:text="@string/NP_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?attr/colorBackgroundFloating" />
+        <TextView
+            android:background="@color/cardview_dark_background"
+            android:id="@+id/np_complete_list_view2"
+            android:text="@string/NP_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="?attr/colorBackgroundFloating" />
+    </LinearLayout>
+</LinearLayout>

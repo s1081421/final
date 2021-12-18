@@ -22,9 +22,15 @@
         android:translationY="100dp"
         app:srcCompat="@drawable/doge" />
 
-    <ListView
+    <TextView
+        android:id="@+id/detail_text"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
+        android:maxLines="10"
+        android:padding="20px"
+        android:scrollbars="vertical"
+        android:text="@string/NP_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:translationY="300dp" />
 
 
