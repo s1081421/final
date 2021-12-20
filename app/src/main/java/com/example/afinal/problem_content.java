@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class problem_content extends AppCompatActivity {
     String[] detail;
     TextView detail_text;
-    TextView qustion_title;
+    TextView question_title;
     String text="";
     int pos;
     boolean type;
@@ -29,8 +29,8 @@ public class problem_content extends AppCompatActivity {
             title=Database.np_complete_qustion_title_list;
         }
         detail_text=findViewById(R.id.detail_text);
-        qustion_title=findViewById(R.id.problem);
-        qustion_title.setText(intent.getStringExtra("title"));
+        question_title =findViewById(R.id.problem);
+        question_title.setText(intent.getStringExtra("title"));
 
         for (int i=0;i<detail.length;i++){
             if(i!=0){

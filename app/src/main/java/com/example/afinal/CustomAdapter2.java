@@ -7,11 +7,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
+//np_hard 的recycleView
 public class CustomAdapter2 extends RecyclerView.Adapter<CustomAdapter2.ViewHolder> {
-    //np_complete的標題
+    //np_hard的標題
     private String[] localDataSet;
-    //np_complete的內容數項
+    //np_hard的內容數項
     private String[][]NP_complete_list;
     /**
      * Provide a reference to the type of views that you are using

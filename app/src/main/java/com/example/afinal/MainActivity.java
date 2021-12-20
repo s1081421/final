@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         //get np_complete_list
         np_complete_title_list=Database.np_complete_qustion_list;
         np_complete_list=Database.np_complete_qustion_title_list;
+        //set up adapter
         np_complete_adapter=new CustomAdapter(np_complete_title_list,np_complete_list);
+        //set up recyclerView
         np_complete_recyclerView=findViewById(R.id.np_complete);
         np_complete_recyclerView.setHasFixedSize(true);
         np_complete_recyclerView.setLayoutManager(new LinearLayoutManager(this));

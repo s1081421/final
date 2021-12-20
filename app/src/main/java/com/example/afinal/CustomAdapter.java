@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
+//np_complete的recyclerView
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     //np_complete的標題
     private String[] localDataSet;
@@ -24,7 +24,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         private final TextView textView3;
         public ViewHolder(View view) {
             super(view);
-            // Define click listener for the ViewHolder's View
+            // tell whether the view should be set up
             textView1 = (TextView) view.findViewById(R.id.NP_complete_recyler_title_view);
             textView2 = (TextView) view.findViewById(R.id.np_complete_list_view1);
             textView3 = (TextView) view.findViewById(R.id.np_complete_list_view2);
@@ -39,6 +39,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
      * by RecyclerView.
      */
     public CustomAdapter(String[] dataSet,String[][]dataSet2) {
+        // load in data
         localDataSet = dataSet;
         NP_complete_list=dataSet2;
     }
@@ -57,15 +58,16 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
 
-        // Get element from your dataset at this position and replace the
-        // contents of the view with that element
+        //binding textView and listener
         viewHolder.textView1.setText(localDataSet[position]);
         viewHolder.textView2.setText(NP_complete_list[position][0]);
         viewHolder.textView3.setText(NP_complete_list[position][1]);
         viewHolder.textView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // return data
                 String[]detail=Database.return_np_complete_detail(position);
+                //send data to MainActivity function(is for starting new intent)
                 MainActivity.onColorItemSelected(view.getContext(),detail,viewHolder.textView1.getText().toString(),position,false);
             }
         });

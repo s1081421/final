@@ -1,6 +1,7 @@
 package com.example.afinal;
 
 public class Database {
+    //store Data class
     public static String[] np_hard_qustion_list = {"Approximate computing", "Data mining",
             "Decision support system", "Phylogenetics"
     };
@@ -108,6 +109,7 @@ public class Database {
             "\n" +
             "Prior to 1950, phylogenetic inferences were generally presented as narrative scenarios. Such methods are often ambiguous and lack explicit criteria for evaluating alternative hypotheses.\n"};
     public static String[] return_np_complete_detail(int pos){
+        //to return data depend pos
         if (pos==0){
             return integer_programming_detail;
         }
