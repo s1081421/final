@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ui2"
     tools:context=".problem_content">
 
 
@@ -12,13 +13,14 @@
         android:layout_width="1000dp"
         android:layout_height="100dp"
         android:gravity="center"
-        android:text="PROBLEM"
-        android:textSize="40dp" />
+        android:text="@string/PROBLEM"
+        android:textSize="40sp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:contentDescription="@string/image"
         android:translationY="100dp"
         app:srcCompat="@drawable/doge" />
 
@@ -26,13 +28,45 @@
         android:id="@+id/detail_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="10"
-        android:padding="20px"
+        android:maxLines="8"
+        android:padding="20dp"
         android:scrollbars="vertical"
         android:text="@string/NP_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:translationY="300dp" />
 
+    <Button
+        android:id="@+id/button_translate"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="590dp"
+        android:text="@string/translate_btn" />
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="591dp"
+        android:layout_marginEnd="78dp"
+        android:text="@string/return_btn" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="557dp"
+        android:layout_marginEnd="180dp"
+        android:text="wiki連結"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
 
 </RelativeLayout>

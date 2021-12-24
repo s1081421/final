@@ -2,5 +2,12 @@
     <string name="app_name">final</string>
     <string name="NP_title">NP-Complete problem</string>
     <string name="NP_title2">NP_Hard problem</string>
-
+    <string name="PROBLEM">PROBLEM</string>
+    <string name="translate_btn">英/中</string>
+    <string name="return_btn">返回</string>
+    <string name="image">image</string>
+    <string name="load_image">載入照片</string>
+    <string name="Learning">Learning about\n NP-Complete and NP-Hard</string>
+    <string name="crew">1081421陳俊維 and 1082027潘威信</string>
+    <string name="title">Np-Problems</string>
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_welcome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="42dp"
+        android:contentDescription="@string/load_image"
+        app:srcCompat="@drawable/doge_strong" />
+
+    <TextView
+        android:id="@+id/title_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        android:text="@string/Learning"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title_welcome_2"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="@string/crew"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

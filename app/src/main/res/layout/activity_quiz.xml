@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_Qeustion"
+            android:layout_width="401dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Qeustion"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_Qeustion"
+            android:layout_marginTop="50dp"
+            android:text="option1" />
+
+        <Button
+            android:id="@+id/button_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_Qeustion"
+            android:layout_marginTop="10dp"
+            android:text="option2" />
+
+        <Button
+            android:id="@+id/button_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_Qeustion"
+            android:layout_marginTop="10dp"
+            android:text="option3" />
+
+        <Button
+            android:id="@+id/button_option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_Qeustion"
+            android:layout_marginTop="10dp"
+            android:text="option4" />
+
+    </LinearLayout>
+</RelativeLayout>
